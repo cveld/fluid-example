@@ -4,17 +4,20 @@
  */
 
 import { KeyValueDataObject } from "@fluid-experimental/data-objects";
-import { TinyliciousService } from "@fluid-experimental/get-container";
+//import { TinyliciousService, RouterliciousService } from "@fluid-experimental/get-container";
 
 import { Fluid } from '@fluid-experimental/fluid-static';
+import { TinyliciousService } from "@fluid-experimental/get-container";
+//import { RouterliciousService } from "@fluid-experimental/get-container";
 import { getContainerId } from './utils';
 import { jsRenderView as renderView } from './view';
+import { service } from './myRouterLiciousService';
 
 const { containerId, isNew } = getContainerId();
 
 async function start(): Promise<void> {
-    const service = new TinyliciousService();
-    
+    //const service = new TinyliciousService();
+       
     const fluidContainer = isNew
         ? await Fluid.createContainer(service, containerId, [KeyValueDataObject])
         : await Fluid.getContainer(service, containerId, [KeyValueDataObject]);
