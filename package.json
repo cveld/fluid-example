@@ -13,7 +13,7 @@
         "start:server": "tinylicious"
     },
     "dependencies": {
-        "@fluid-experimental/data-objects": "^0.36.0",
+        "@fluid-experimental/data-objects": "^0.45.3",
         "@fluid-experimental/fluid-static": "^0.36.0",
         "@fluid-experimental/get-container": "^0.36.0",
         "chokidar": "^3.5.1",
